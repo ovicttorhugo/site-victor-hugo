@@ -6,7 +6,7 @@
     // Troque para true quando tiver o credenciamento de assessor para exibir a aba "Contato".
     contatoAtivo: true,
     // Seu WhatsApp com código do país e DDD, somente dígitos (ex: 5511999999999).
-    whatsappNumero: ''
+    whatsappNumero: '5511955951814'
   };
 
   var TABS = ['inicio', 'bio', 'trajetoria', 'eventos', 'portfolio', 'artigos'];
