@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victor Hugo — CDR · Valor Investimentos</title>
+<meta name="description" content="Site pessoal de Victor Hugo, CDR na Valor Investimentos. Biografia, trajetória, eventos, portfólio e artigos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%234a6fa5'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="blobs" aria-hidden="true">
+  <div class="blob blob-0"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+</div>
+
+<div id="cursor" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button type="button" class="logo" data-tab-link="inicio" data-hoverable>
+      <span class="logo-dot"></span>
+      <span class="logo-word">Victor Hugo</span>
+    </button>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <button type="button" class="nav-item" data-tab-link="inicio" data-hoverable>
+        <span class="nav-label">Início</span><span class="nav-bar"></span>
+      </button>
+      <button type="button" class="nav-item" data-tab-link="bio" data-hoverable>
+        <span class="nav-label">Biografia</span><span class="nav-bar"></span>
+      </button>
+      <button type="button" class="nav-item" data-tab-link="trajetoria" data-hoverable>
+        <span class="nav-label">Trajetória</span><span class="nav-bar"></span>
+      </button>
+      <button type="button" class="nav-item" data-tab-link="eventos" data-hoverable>
+        <span class="nav-label">Eventos</span><span class="nav-bar"></span>
+      </button>
+      <button type="button" class="nav-item" data-tab-link="portfolio" data-hoverable>
+        <span class="nav-label">Portfólio</span><span class="nav-bar"></span>
+      </button>
+      <button type="button" class="nav-item" data-tab-link="artigos" data-hoverable>
+        <span class="nav-label">Artigos</span><span class="nav-bar"></span>
+      </button>
+      <!-- Fica oculto até SITE_CONFIG.contatoAtivo = true em main.js (após o credenciamento) -->
+      <button type="button" class="nav-item" data-tab-link="contato" data-hoverable>
+        <span class="nav-label">Contato</span><span class="nav-bar"></span>
+      </button>
+    </nav>
+    <button type="button" id="theme-toggle" class="theme-toggle" data-hoverable aria-label="Alternar modo claro/escuro">
+      <span id="theme-glyph">☀</span>
+    </button>
+  </div>
+</header>
+
+<main class="site-main">
+
+  <!-- Início -->
+  <section id="inicio" class="tab-panel tab-inicio" data-tab-panel>
+    <p class="eyebrow center" data-reveal>CDR · Valor Investimentos</p>
+    <h1 class="hero-title" data-reveal>O futuro pertence a quem se prepara.</h1>
+    <p class="hero-sub" data-reveal>Estratégia. Confiança. Propósito.</p>
+    <div class="hero-actions" data-reveal>
+      <button type="button" class="btn btn-primary" data-tab-link="trajetoria" data-hoverable>Ver trajetória</button>
+      <button type="button" class="btn btn-secondary" data-tab-link="artigos" data-hoverable>Ler artigos</button>
+    </div>
+    <div class="stats-grid grid-2" data-reveal>
+      <div class="stat-cell">
+        <div class="stat-num">2026</div>
+        <div class="stat-label">Início no mercado financeiro</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">CDR</div>
+        <div class="stat-label">Relacionamento com clientes</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num accent">2026</div>
+        <div class="stat-label">Grupo de formação · Assessoria</div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap" data-reveal>
+      <div class="hero-photo-box">
+        <!-- Substitua img/foto-victor.png pela sua foto (mesmo nome de arquivo, ou atualize o src abaixo) -->
+        <img src="img/foto-victor.png" alt="Foto de Victor Hugo" class="hero-photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Biografia -->
+  <section id="bio" class="tab-panel tab-bio" data-tab-panel hidden>
+    <p class="eyebrow" data-reveal>Biografia profissional</p>
+    <div class="two-col bio-grid">
+      <div>
+        <h2 class="section-title" data-reveal>Sobre o meu trabalho</h2>
+        <p class="body-text" data-reveal>Atuo como CDR na Valor Investimentos, onde acompanho clientes no dia a dia, entendo objetivos e ajudo a traduzir metas em decisões financeiras.</p>
+        <p class="body-text" data-reveal>Atualmente faço parte do grupo de formação para a área de assessoria de investimentos — aprofundando conhecimento em mercado de capitais, planejamento e educação financeira. <span class="ink">Este texto é um exemplo: edite com a sua própria história.</span></p>
+        <p class="body-text last" data-reveal>Acredito que investir bem começa por uma boa relação — de confiança, clareza e constância.</p>
+      </div>
+      <aside class="bio-aside" data-reveal>
+        <div class="aside-label">Em foco</div>
+        <ul class="focus-list">
+          <li><span class="dot"></span><span>Relacionamento e atendimento a clientes</span></li>
+          <li><span class="dot"></span><span>Planejamento financeiro pessoal</span></li>
+          <li><span class="dot"></span><span>Mercado de capitais e renda fixa/variável</span></li>
+          <li><span class="dot"></span><span>Educação financeira e conteúdo</span></li>
+        </ul>
+        <div class="aside-divider"></div>
+        <div class="aside-rows">
+          <div class="aside-row"><span class="muted">Empresa</span><span>Valor Investimentos</span></div>
+          <div class="aside-row"><span class="muted">Cargo</span><span>CDR</span></div>
+          <div class="aside-row"><span class="muted">Status</span><span class="accent-text">Em formação · Assessoria</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Trajetória -->
+  <section id="trajetoria" class="tab-panel tab-trajetoria" data-tab-panel hidden>
+    <p class="eyebrow" data-reveal>Trajetória</p>
+    <h2 class="section-title big-gap" data-reveal>Experiências de vida</h2>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item" data-reveal style="transition-delay:0ms">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2026</div>
+        <div class="timeline-title">Grupo de Formação — Assessoria de Investimentos</div>
+        <div class="timeline-local">Valor Investimentos</div>
+        <div class="timeline-desc">Etapa atual: em formação para atuar como assessor(a) de investimentos, aprofundando mercado de capitais, planejamento e relacionamento com clientes.</div>
+      </div>
+
+      <div class="timeline-item" data-reveal style="transition-delay:80ms">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2025</div>
+        <div class="timeline-title">CDR — Relacionamento com clientes</div>
+        <div class="timeline-local">Valor Investimentos</div>
+        <div class="timeline-desc">Atendimento e relacionamento com clientes, apoio à mesa de investimentos e desenvolvimento de carteira.</div>
+      </div>
+
+      <div class="timeline-item" data-reveal style="transition-delay:160ms">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2024</div>
+        <div class="timeline-title">Início da jornada no mercado financeiro</div>
+        <div class="timeline-desc">Primeiros passos, estudos e certificações na área de investimentos.</div>
+      </div>
+
+      <div class="timeline-item" data-reveal style="transition-delay:240ms">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">—</div>
+        <div class="timeline-title">Adicione um marco</div>
+        <div class="timeline-desc">Edite este ponto da linha do tempo com uma experiência sua — pessoal ou profissional.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eventos -->
+  <section id="eventos" class="tab-panel tab-eventos" data-tab-panel hidden>
+    <p class="eyebrow" data-reveal>Eventos &amp; atualizações</p>
+    <h2 class="section-title" data-reveal>O que anda acontecendo</h2>
+
+    <div class="featured-event two-col" data-reveal>
+      <div class="featured-text">
+        <span class="badge">Em breve · 2026</span>
+        <div class="featured-title">Expert XP 2026</div>
+        <div class="featured-desc">Vou participar da Expert XP este ano — um dos maiores eventos de investimentos da América Latina. Em breve atualizo este espaço com fotos e registros do evento.</div>
+      </div>
+      <div class="featured-photo">
+        <!-- Substitua img/expert-xp-2026.png pelas fotos do evento quando disponíveis -->
+        <img src="img/expert-xp-2026.png" alt="Espaço reservado para fotos da Expert XP 2026" class="featured-img">
+      </div>
+    </div>
+
+    <div class="event-list">
+      <div class="event-card" data-reveal data-hoverable style="transition-delay:0ms">
+        <div class="event-date">JUL 2026</div>
+        <div>
+          <span class="tag">Atualização</span>
+          <div class="event-title">Novo ciclo do grupo de formação</div>
+          <div class="event-text">Início de mais uma etapa rumo à certificação e à atuação como assessor(a) de investimentos.</div>
+        </div>
+      </div>
+      <div class="event-card" data-reveal data-hoverable style="transition-delay:90ms">
+        <div class="event-date">JUN 2026</div>
+        <div>
+          <span class="tag">Evento</span>
+          <div class="event-title">Encontro de educação financeira</div>
+          <div class="event-text">Participação em ação de aproximação e orientação com clientes e convidados.</div>
+        </div>
+      </div>
+      <div class="event-card" data-reveal data-hoverable style="transition-delay:180ms">
+        <div class="event-date">MAI 2026</div>
+        <div>
+          <span class="tag">Conquista</span>
+          <div class="event-title">Marco de relacionamento atingido</div>
+          <div class="event-text">Resultado relevante no desenvolvimento e acompanhamento da carteira de clientes.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section id="portfolio" class="tab-panel tab-portfolio" data-tab-panel hidden>
+    <p class="eyebrow" data-reveal>Criações próprias</p>
+    <h2 class="section-title" data-reveal>Portfólio</h2>
+    <div class="portfolio-grid grid-2">
+      <div class="portfolio-card" data-reveal data-hoverable style="transition-delay:0ms">
+        <div class="portfolio-thumb"><span class="slot-label">capa do guia</span></div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Material educativo</div>
+          <div class="portfolio-title">Guia de primeiros investimentos</div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-reveal data-hoverable style="transition-delay:80ms">
+        <div class="portfolio-thumb"><span class="slot-label">print da news</span></div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Conteúdo</div>
+          <div class="portfolio-title">Newsletter de mercado</div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-reveal data-hoverable style="transition-delay:160ms">
+        <div class="portfolio-thumb"><span class="slot-label">imagem</span></div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Ferramenta</div>
+          <div class="portfolio-title">Planilha de planejamento</div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-reveal data-hoverable style="transition-delay:240ms">
+        <div class="portfolio-thumb"><span class="slot-label">thumbnail</span></div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Vídeo</div>
+          <div class="portfolio-title">Série sobre educação financeira</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artigos -->
+  <section id="artigos" class="tab-panel tab-artigos" data-tab-panel hidden>
+    <p class="eyebrow" data-reveal>Artigos &amp; blog</p>
+    <h2 class="section-title small-gap" data-reveal>Escrita própria</h2>
+    <div class="articles-banner" data-reveal>
+      <span class="pencil">✎</span>
+      <div>Textos e artigos escritos por <span class="ink strong">Victor Hugo</span>. Novas publicações são adicionadas com o tempo.</div>
+    </div>
+    <div class="articles-list">
+      <a href="#" class="article-row" data-reveal data-hoverable style="transition-delay:0ms">
+        <div>
+          <div class="article-meta">
+            <span class="tag-status published">Publicado</span>
+            <span class="article-date">10 JUL 2026</span>
+          </div>
+          <div class="article-title">Como começar a investir com pouco</div>
+          <div class="article-excerpt">Um caminho direto para quem quer dar os primeiros passos sem se perder em jargões.</div>
+        </div>
+        <div class="article-cta hide-sm">Ler mais →</div>
+      </a>
+      <a href="#" class="article-row" data-reveal data-hoverable style="transition-delay:90ms">
+        <div>
+          <div class="article-meta">
+            <span class="tag-status published">Publicado</span>
+            <span class="article-date">28 JUN 2026</span>
+          </div>
+          <div class="article-title">O papel do assessor de investimentos</div>
+          <div class="article-excerpt">O que faz um assessor, como ele trabalha e por que o relacionamento importa tanto.</div>
+        </div>
+        <div class="article-cta hide-sm">Ler mais →</div>
+      </a>
+      <a href="#" class="article-row" data-reveal data-hoverable style="transition-delay:180ms">
+        <div>
+          <div class="article-meta">
+            <span class="tag-status draft">Rascunho</span>
+            <span class="article-date">—</span>
+          </div>
+          <div class="article-title">Renda fixa x renda variável</div>
+          <div class="article-excerpt">Rascunho em andamento — em breve, publicação completa.</div>
+        </div>
+        <div class="article-cta hide-sm">Ler mais →</div>
+      </a>
+      <div class="articles-end-border"></div>
+    </div>
+  </section>
+
+  <!-- Contato / qualificação de investidor -->
+  <!-- Fica oculta até SITE_CONFIG.contatoAtivo = true em main.js (após o credenciamento) -->
+  <section id="contato" class="tab-panel tab-contato" data-tab-panel hidden>
+    <p class="eyebrow center" data-reveal>Atendimento personalizado</p>
+    <h2 class="section-title small-gap" data-reveal>Vamos conversar sobre seus investimentos</h2>
+    <p class="quiz-intro" data-reveal>Responda algumas perguntas rápidas — leva menos de 2 minutos — para eu entender melhor o seu momento. Ao final, a conversa continua direto no WhatsApp.</p>
+
+    <div class="quiz-card" data-reveal>
+      <div class="quiz-progress">
+        <span class="quiz-step-dot active" data-step-dot="1"></span>
+        <span class="quiz-step-dot" data-step-dot="2"></span>
+        <span class="quiz-step-dot" data-step-dot="3"></span>
+      </div>
+
+      <!-- Etapa 1: dados de contato -->
+      <div class="quiz-step" data-quiz-step="1">
+        <div class="quiz-step-label">Etapa 1 de 3 · Seus dados</div>
+        <label class="quiz-field">
+          <span>Nome</span>
+          <input type="text" id="q-nome" placeholder="Seu nome completo" autocomplete="name">
+        </label>
+        <label class="quiz-field">
+          <span>WhatsApp</span>
+          <input type="tel" id="q-whatsapp" placeholder="(11) 99999-9999" autocomplete="tel">
+        </label>
+        <label class="quiz-field">
+          <span>E-mail <em>(opcional)</em></span>
+          <input type="email" id="q-email" placeholder="seu@email.com" autocomplete="email">
+        </label>
+        <div class="quiz-actions">
+          <button type="button" class="btn btn-primary" data-quiz-next="2">Continuar</button>
+        </div>
+      </div>
+
+      <!-- Etapa 2: qualificação rápida -->
+      <div class="quiz-step" data-quiz-step="2" hidden>
+        <div class="quiz-step-label">Etapa 2 de 3 · Seu momento</div>
+
+        <div class="quiz-question">
+          <div class="quiz-question-title">Quanto você tem disponível para investir hoje?</div>
+          <div class="quiz-options" data-quiz-group="disponivel">
+            <button type="button" class="quiz-option" data-value="Até R$ 5 mil">Até R$ 5 mil</button>
+            <button type="button" class="quiz-option" data-value="R$ 5 mil a R$ 20 mil">R$ 5 mil a R$ 20 mil</button>
+            <button type="button" class="quiz-option" data-value="R$ 20 mil a R$ 50 mil">R$ 20 mil a R$ 50 mil</button>
+            <button type="button" class="quiz-option" data-value="R$ 50 mil a R$ 100 mil">R$ 50 mil a R$ 100 mil</button>
+            <button type="button" class="quiz-option" data-value="Acima de R$ 100 mil">Acima de R$ 100 mil</button>
+            <button type="button" class="quiz-option" data-value="Prefiro não informar">Prefiro não informar</button>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-question-title">Você já investe atualmente?</div>
+          <div class="quiz-options" data-quiz-group="jaInveste">
+            <button type="button" class="quiz-option" data-value="Sim, já invisto">Sim, já invisto</button>
+            <button type="button" class="quiz-option" data-value="Não, seria meu primeiro investimento">Não, seria meu primeiro investimento</button>
+            <button type="button" class="quiz-option" data-value="Invisto pouco e quero organizar melhor">Invisto pouco e quero organizar melhor</button>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-question-title">Qual seu principal objetivo?</div>
+          <div class="quiz-options" data-quiz-group="objetivo">
+            <button type="button" class="quiz-option" data-value="Fazer o dinheiro render mais">Fazer o dinheiro render mais</button>
+            <button type="button" class="quiz-option" data-value="Começar a investir do zero">Começar a investir do zero</button>
+            <button type="button" class="quiz-option" data-value="Organizar / replanejar minha carteira">Organizar / replanejar minha carteira</button>
+            <button type="button" class="quiz-option" data-value="Planejar aposentadoria e longo prazo">Planejar aposentadoria e longo prazo</button>
+            <button type="button" class="quiz-option" data-value="Montar reserva de emergência">Montar reserva de emergência</button>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-question-title">Quando pretende começar?</div>
+          <div class="quiz-options" data-quiz-group="urgencia">
+            <button type="button" class="quiz-option" data-value="Imediatamente">Imediatamente</button>
+            <button type="button" class="quiz-option" data-value="Nos próximos 30 dias">Nos próximos 30 dias</button>
+            <button type="button" class="quiz-option" data-value="Ainda estou pesquisando">Ainda estou pesquisando</button>
+          </div>
+        </div>
+
+        <div class="quiz-actions space-between">
+          <button type="button" class="btn btn-secondary" data-quiz-back="1">Voltar</button>
+          <div class="quiz-actions-right">
+            <button type="button" class="btn-text" data-quiz-skip>Pular perfil e enviar</button>
+            <button type="button" class="btn btn-primary" data-quiz-next="3">Continuar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Etapa 3: perfil de investidor (opcional) -->
+      <div class="quiz-step" data-quiz-step="3" hidden>
+        <div class="quiz-step-label">Etapa 3 de 3 · Perfil de investidor <em>(opcional)</em></div>
+        <p class="quiz-step-note">Essas perguntas ajudam a entender melhor seu perfil como investidor — quanto mais completo, mais direta é a nossa conversa.</p>
+
+        <div class="quiz-question">
+          <div class="quiz-question-title">Por quanto tempo pretende deixar o dinheiro investido?</div>
+          <div class="quiz-options" data-quiz-group="horizonte">
+            <button type="button" class="quiz-option" data-value="Menos de 1 ano" data-score="1">Menos de 1 ano</button>
+            <button type="button" class="quiz-option" data-value="De 1 a 3 anos" data-score="2">De 1 a 3 anos</button>
+            <button type="button" class="quiz-option" data-value="Mais de 3 anos" data-score="3">Mais de 3 anos</button>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-question-title">Se seus investimentos caíssem 20% em um mês, o que você faria?</div>
+          <div class="quiz-options" data-quiz-group="reacao">
+            <button type="button" class="quiz-option" data-value="Venderia tudo imediatamente" data-score="1">Venderia tudo imediatamente</button>
+            <button type="button" class="quiz-option" data-value="Venderia parte" data-score="2">Venderia parte</button>
+            <button type="button" class="quiz-option" data-value="Manteria e esperaria" data-score="3">Manteria e esperaria</button>
+            <button type="button" class="quiz-option" data-value="Aproveitaria para investir mais" data-score="4">Aproveitaria para investir mais</button>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-question-title">Qual sua experiência com investimentos?</div>
+          <div class="quiz-options" data-quiz-group="experiencia">
+            <button type="button" class="quiz-option" data-value="Nenhuma" data-score="1">Nenhuma</button>
+            <button type="button" class="quiz-option" data-value="Básica" data-score="2">Básica</button>
+            <button type="button" class="quiz-option" data-value="Intermediária" data-score="3">Intermediária</button>
+            <button type="button" class="quiz-option" data-value="Avançada" data-score="4">Avançada</button>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-question-title">O que é mais importante para você?</div>
+          <div class="quiz-options" data-quiz-group="prioridade">
+            <button type="button" class="quiz-option" data-value="Segurança, mesmo com retorno menor" data-score="1">Segurança, mesmo com retorno menor</button>
+            <button type="button" class="quiz-option" data-value="Equilíbrio entre segurança e retorno" data-score="2">Equilíbrio entre segurança e retorno</button>
+            <button type="button" class="quiz-option" data-value="Potencial de retorno, aceito mais risco" data-score="3">Potencial de retorno, aceito mais risco</button>
+          </div>
+        </div>
+
+        <div class="quiz-actions space-between">
+          <button type="button" class="btn btn-secondary" data-quiz-back="2">Voltar</button>
+          <button type="button" class="btn btn-primary" data-quiz-finish>Ver resultado</button>
+        </div>
+      </div>
+
+      <!-- Resultado -->
+      <div class="quiz-step quiz-result" data-quiz-step="result" hidden>
+        <div class="quiz-result-profile" id="quiz-result-profile" hidden>
+          <div class="quiz-result-label">Seu perfil indicativo</div>
+          <div class="quiz-result-value" id="quiz-result-value">—</div>
+          <div class="quiz-result-desc" id="quiz-result-desc"></div>
+        </div>
+        <p class="quiz-result-thanks">Obrigado! Recebi suas respostas.</p>
+        <a href="#" id="quiz-whatsapp-btn" class="btn btn-primary quiz-whatsapp-btn" target="_blank" rel="noopener">Falar com Victor Hugo no WhatsApp →</a>
+        <p class="quiz-disclaimer">Esta avaliação é informativa e não substitui uma análise formal de perfil de investidor (suitability). Nenhuma recomendação de investimento é feita neste teste.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-legal">
+      <div>© 2026 Victor Hugo. Todos os direitos reservados.</div>
+      <div class="footer-sub">Conteúdo, textos e criações próprias protegidos por direitos autorais.</div>
+    </div>
+    <div class="footer-links">
+      <button type="button" class="link-btn" data-hoverable data-legal="termos">Termos de Uso</button>
+      <button type="button" class="link-btn" data-hoverable data-legal="privacidade">Política de Privacidade</button>
+    </div>
+  </div>
+</footer>
+
+<div id="legal-overlay" class="legal-overlay" hidden>
+  <div id="legal-panel" class="legal-panel" role="dialog" aria-modal="true" aria-labelledby="legal-title">
+    <div class="legal-head">
+      <h3 id="legal-title" class="legal-title"></h3>
+      <button type="button" id="legal-close" class="legal-close" data-hoverable aria-label="Fechar">✕</button>
+    </div>
+    <div id="legal-body" class="legal-body"></div>
+    <div class="legal-disclaimer">Este é um texto-modelo de referência, não um documento jurídico. Revise e adapte com apoio profissional antes de publicar.</div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
