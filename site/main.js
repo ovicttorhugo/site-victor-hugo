@@ -258,8 +258,13 @@
     function requireContactFields() {
       var nome = section.querySelector('#q-nome').value.trim();
       var wpp = section.querySelector('#q-whatsapp').value.trim();
+      var consent = section.querySelector('#q-consent').checked;
       if (!nome || !wpp) {
         alert('Preencha nome e WhatsApp para continuar.');
+        return false;
+      }
+      if (!consent) {
+        alert('Confirme que concorda em ser contatado para continuar.');
         return false;
       }
       return true;

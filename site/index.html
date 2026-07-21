@@ -3,12 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Victor Hugo — BDR · Valor Investimentos</title>
-<meta name="description" content="Site pessoal de Victor Hugo, BDR na Valor Investimentos. Biografia, trajetória, eventos, portfólio e artigos.">
+<title>Victor Hugo — Valor Investimentos</title>
+<meta name="description" content="Site pessoal de Victor Hugo, da Valor Investimentos. Biografia, trajetória, eventos, portfólio e artigos.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Victor Hugo">
+<meta property="og:url" content="https://victorhugo.social/">
+<meta property="og:title" content="Victor Hugo — Valor Investimentos">
+<meta property="og:description" content="Biografia, trajetória, eventos, portfólio e artigos de Victor Hugo, da Valor Investimentos.">
+<meta property="og:image" content="https://victorhugo.social/img/foto-victor.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Victor Hugo — Valor Investimentos">
+<meta name="twitter:description" content="Biografia, trajetória, eventos, portfólio e artigos de Victor Hugo, da Valor Investimentos.">
+<meta name="twitter:image" content="https://victorhugo.social/img/foto-victor.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%234a6fa5'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234a6fa5'/%3E%3Ctext x='50' y='68' font-family='Arial,Helvetica,sans-serif' font-size='54' font-weight='700' fill='white' text-anchor='middle'%3EVH%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,10 +34,17 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <button type="button" class="logo" data-tab-link="inicio" data-hoverable>
-      <span class="logo-dot"></span>
-      <span class="logo-word">Victor Hugo</span>
-    </button>
+    <div class="brand-group">
+      <button type="button" class="logo" data-tab-link="inicio" data-hoverable>
+        <span class="logo-dot"></span>
+        <span class="logo-word">Victor Hugo</span>
+      </button>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="brand-logo-chip">
+        <img src="img/logo-valor.png" alt="Valor Investimentos" class="brand-logo-img logo-light">
+        <img src="img/logo-valor-white.png" alt="Valor Investimentos" class="brand-logo-img logo-dark">
+      </span>
+    </div>
     <nav class="main-nav" aria-label="Navegação principal">
       <button type="button" class="nav-item" data-tab-link="inicio" data-hoverable>
         <span class="nav-label">Início</span><span class="nav-bar"></span>
@@ -61,7 +79,6 @@
 
   <!-- Início -->
   <section id="inicio" class="tab-panel tab-inicio" data-tab-panel>
-    <p class="eyebrow center" data-reveal>BDR · Valor Investimentos</p>
     <h1 class="hero-title" data-reveal>O futuro pertence a quem se prepara.</h1>
     <p class="hero-sub" data-reveal>Estratégia. Confiança. Propósito.</p>
     <div class="hero-actions" data-reveal>
@@ -73,9 +90,9 @@
         <div class="stat-num">2026</div>
         <div class="stat-label">Início no mercado financeiro</div>
       </div>
-      <div class="stat-cell">
-        <div class="stat-num">BDR</div>
-        <div class="stat-label">Relacionamento com clientes</div>
+      <div class="stat-cell stat-cell-logo">
+        <img src="img/logo-valor.png" alt="Valor Investimentos" class="stat-logo logo-light">
+        <img src="img/logo-valor-white.png" alt="Valor Investimentos" class="stat-logo logo-dark">
       </div>
       <div class="stat-cell">
         <div class="stat-num accent">2026</div>
@@ -84,8 +101,7 @@
     </div>
     <div class="hero-photo-wrap" data-reveal>
       <div class="hero-photo-box">
-        <!-- Substitua img/foto-victor.png pela sua foto (mesmo nome de arquivo, ou atualize o src abaixo) -->
-        <img src="img/foto-victor.png" alt="Foto de Victor Hugo" class="hero-photo">
+        <img src="img/foto-victor.jpg" alt="Foto de Victor Hugo" class="hero-photo">
       </div>
     </div>
   </section>
@@ -96,8 +112,8 @@
     <div class="two-col bio-grid">
       <div>
         <h2 class="section-title" data-reveal>Sobre o meu trabalho</h2>
-        <p class="body-text" data-reveal>Atuo como BDR na Valor Investimentos, onde acompanho clientes no dia a dia, entendo objetivos e ajudo a traduzir metas em decisões financeiras.</p>
-        <p class="body-text" data-reveal>Atualmente faço parte do grupo de formação para a área de assessoria de investimentos — aprofundando conhecimento em mercado de capitais, planejamento e educação financeira. <span class="ink">Este texto é um exemplo: edite com a sua própria história.</span></p>
+        <p class="body-text" data-reveal>Iniciei minha trajetória no mercado financeiro em 2026 e hoje atuo como BDR na Valor Investimentos, onde acompanho clientes no dia a dia, entendo objetivos e ajudo a traduzir metas em decisões financeiras.</p>
+        <p class="body-text" data-reveal>Atualmente faço parte do grupo de formação para a área de assessoria de investimentos — aprofundando conhecimento em mercado de capitais, planejamento e educação financeira.</p>
         <p class="body-text last" data-reveal>Acredito que investir bem começa por uma boa relação — de confiança, clareza e constância.</p>
       </div>
       <aside class="bio-aside" data-reveal>
@@ -135,7 +151,7 @@
 
       <div class="timeline-item" data-reveal style="transition-delay:80ms">
         <div class="timeline-dot"></div>
-        <div class="timeline-year">2025</div>
+        <div class="timeline-year">Jun 2026</div>
         <div class="timeline-title">BDR — Relacionamento com clientes</div>
         <div class="timeline-local">Valor Investimentos</div>
         <div class="timeline-desc">Atendimento e relacionamento com clientes, apoio à mesa de investimentos e desenvolvimento de carteira.</div>
@@ -143,16 +159,9 @@
 
       <div class="timeline-item" data-reveal style="transition-delay:160ms">
         <div class="timeline-dot"></div>
-        <div class="timeline-year">2024</div>
+        <div class="timeline-year">Jan 2026</div>
         <div class="timeline-title">Início da jornada no mercado financeiro</div>
         <div class="timeline-desc">Primeiros passos, estudos e certificações na área de investimentos.</div>
-      </div>
-
-      <div class="timeline-item" data-reveal style="transition-delay:240ms">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">—</div>
-        <div class="timeline-title">Adicione um marco</div>
-        <div class="timeline-desc">Edite este ponto da linha do tempo com uma experiência sua — pessoal ou profissional.</div>
       </div>
     </div>
   </section>
@@ -313,6 +322,10 @@
           <span>E-mail <em>(opcional)</em></span>
           <input type="email" id="q-email" placeholder="seu@email.com" autocomplete="email">
         </label>
+        <label class="quiz-consent">
+          <input type="checkbox" id="q-consent">
+          <span>Concordo em ser contatado por Victor Hugo via WhatsApp com base nas informações enviadas aqui. Seus dados não são compartilhados com terceiros.</span>
+        </label>
         <div class="quiz-actions">
           <button type="button" class="btn btn-primary" data-quiz-next="2">Continuar</button>
         </div>
@@ -430,7 +443,7 @@
         </div>
         <p class="quiz-result-thanks">Obrigado! Recebi suas respostas.</p>
         <a href="#" id="quiz-whatsapp-btn" class="btn btn-primary quiz-whatsapp-btn" target="_blank" rel="noopener">Falar com Victor Hugo no WhatsApp →</a>
-        <p class="quiz-disclaimer">Esta avaliação é informativa e não substitui uma análise formal de perfil de investidor (suitability). Nenhuma recomendação de investimento é feita neste teste.</p>
+        <p class="quiz-disclaimer">Esta avaliação é informativa e não substitui uma análise formal de perfil de investidor (suitability). Nenhuma recomendação de investimento é feita neste teste, nem há garantia de rentabilidade — investimentos envolvem riscos, inclusive perda do capital investido.</p>
       </div>
     </div>
   </section>
@@ -439,6 +452,9 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
+    <div class="cvm-disclaimer">
+      Victor Hugo atua como BDR na Valor Investimentos (Agente Autônomo de Investimento) e integra o grupo de formação para a atividade de assessoria de investimentos, com vínculo à Valor Investimentos nos termos da Resolução CVM 178. Este site tem caráter exclusivamente informativo: não constitui oferta, análise ou recomendação de investimento, não garante rentabilidade e não administra ou gerencia recursos de terceiros. Investimentos envolvem riscos, inclusive perda do capital investido, e rentabilidade passada não é garantia de rentabilidade futura.
+    </div>
     <div class="footer-legal">
       <div>© 2026 Victor Hugo. Todos os direitos reservados.</div>
       <div class="footer-sub">Conteúdo, textos e criações próprias protegidos por direitos autorais.</div>
