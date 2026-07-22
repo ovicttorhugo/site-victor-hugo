@@ -97,7 +97,22 @@
   navLinks.forEach(function (btn) {
     btn.addEventListener('click', function () {
       setTab(btn.getAttribute('data-tab-link'));
+      closeMobileNav();
     });
+  });
+
+  /* ---------- Mobile nav toggle ---------- */
+  var navToggle = document.getElementById('nav-toggle');
+  var mainNavEl = document.getElementById('main-nav');
+
+  function closeMobileNav() {
+    mainNavEl.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  navToggle.addEventListener('click', function () {
+    var isOpen = mainNavEl.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
   window.addEventListener('popstate', function () {
