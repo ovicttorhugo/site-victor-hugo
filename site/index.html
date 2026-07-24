@@ -174,17 +174,16 @@
     <p class="eyebrow" data-reveal>Eventos &amp; atualizações</p>
     <h2 class="section-title" data-reveal>O que anda acontecendo</h2>
 
-    <div class="featured-event two-col" data-reveal>
+    <button type="button" class="featured-event two-col" id="event-open-expert" data-hoverable aria-haspopup="dialog" data-reveal>
       <div class="featured-text">
-        <span class="badge">Em breve · 2026</span>
+        <span class="badge">Julho · 2026</span>
         <div class="featured-title">Expert XP 2026</div>
-        <div class="featured-desc">Vou participar da Expert XP este ano — um dos maiores eventos de investimentos da América Latina. Em breve atualizo este espaço com fotos e registros do evento.</div>
+        <div class="featured-desc">Participei da Expert XP este ano — um dos maiores eventos de investimentos da América Latina. Clique para ver as fotos do evento.</div>
       </div>
       <div class="featured-photo">
-        <!-- Substitua img/expert-xp-2026.png pelas fotos do evento quando disponíveis -->
-        <img src="img/expert-xp-2026.png" alt="Espaço reservado para fotos da Expert XP 2026" class="featured-img">
+        <img src="img/expert-xp-2026.jpg" alt="Palco principal da Expert XP 2026" class="featured-img">
       </div>
-    </div>
+    </button>
 
     <div class="event-list">
       <div class="event-card" data-reveal data-hoverable style="transition-delay:0ms">
@@ -477,6 +476,32 @@
     </div>
     <div id="legal-body" class="legal-body"></div>
     <div class="legal-disclaimer">Este é um texto-modelo de referência, não um documento jurídico. Revise e adapte com apoio profissional antes de publicar.</div>
+  </div>
+</div>
+
+<div id="event-overlay" class="legal-overlay event-overlay" hidden>
+  <div id="event-panel" class="legal-panel event-panel" role="dialog" aria-modal="true" aria-labelledby="event-title">
+    <div class="legal-head">
+      <h3 id="event-title" class="legal-title">Expert XP 2026</h3>
+      <button type="button" id="event-close" class="legal-close" data-hoverable aria-label="Fechar">✕</button>
+    </div>
+    <div class="event-story-list">
+      <div class="event-story"><div class="event-story-photo"><img src="img/eventos-01.jpg" alt="Bolinha de tênis autografada pelo Guga" loading="lazy"></div><div class="event-story-text"><h4 class="event-story-title">Assinatura de sorte</h4><p class="event-story-desc">Depois de rodar a Expert XP inteira atrás de conhecer o evento e os stands, sem sucesso em nenhum brinde (kkkkkk), acho que ganhei um dos melhores prêmios que alguém poderia ganhar: uma bolinha autografada pelo Guga!</p></div></div>
+      <div class="event-story"><div class="event-story-photo"><img src="img/eventos-02.jpg" alt="Estande da Valor Investimentos na Expert XP" loading="lazy"></div><div class="event-story-text"><h4 class="event-story-title">Mais do que investimentos, é futuro!</h4><p class="event-story-desc">Na data de publicação dessas fotos eu tenho 50 dias de Valor. Não achava que fosse possível aprender tanta coisa em tão pouco tempo — sou muito grato por isso. Vencer juntos.</p></div></div>
+      <div class="event-story"><div class="event-story-photo"><img src="img/eventos-03.jpg" alt="Carro de Fórmula 1 da Red Bull na Expert XP" loading="lazy"></div><div class="event-story-text"><h4 class="event-story-title">F1 na Expert XP!</h4><p class="event-story-desc">Sou um grande fã de Fórmula 1. Por mais que seja torcedor da Mercedes, vamos concordar que esse carro da Red Bull é um absurdo!</p></div></div>
+      <div class="event-story"><div class="event-story-photo"><img src="img/eventos-05.jpg" alt="Telão do palco principal da Expert XP" loading="lazy"></div><div class="event-story-text"><h4 class="event-story-title">O sócio fundador da Valor Investimentos</h4><p class="event-story-desc">Poucos sabem o peso dessa imagem, mas isso é simplesmente Guilherme Benchimol tendo o prazer de falar com o sócio fundador da Valor Investimentos, Paulo Henrique — mais conhecido como Paulão entre os mais íntimos. O único representante que teve esse privilégio entre todas as outras redes ouviu de Guilherme: "se não fosse você e a Valor Investimentos, a XP não seria o que é hoje."</p></div></div>
+      <div class="event-story"><div class="event-story-photo"><img src="img/eventos-11.jpg" alt="André Agassi no palco da Expert XP" loading="lazy"></div><div class="event-story-text"><h4 class="event-story-title">Agassi e sua representatividade no esporte</h4><p class="event-story-desc">André Agassi, um dos nomes com mais prestígio na história do tênis, deu a nós espectadores uma das melhores apresentações da Expert. Visão, experiência, confiança e generosidade são as palavras que escolho para descrever essa lenda do esporte.</p></div></div>
+    </div>
+
+    <div class="event-gallery">
+      <a href="img/eventos-06.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/eventos-06.jpg" alt="Registro da Expert XP 2026" loading="lazy"></a>
+      <a href="img/eventos-07.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/eventos-07.jpg" alt="Registro da Expert XP 2026" loading="lazy"></a>
+      <a href="img/eventos-08.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/eventos-08.jpg" alt="Registro da Expert XP 2026" loading="lazy"></a>
+      <a href="img/eventos-09.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/eventos-09.jpg" alt="Registro da Expert XP 2026" loading="lazy"></a>
+      <a href="img/eventos-10.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/eventos-10.jpg" alt="Registro da Expert XP 2026" loading="lazy"></a>
+      <a href="img/eventos-12.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/eventos-12.jpg" alt="Registro da Expert XP 2026" loading="lazy"></a>
+      <a href="img/eventos-13.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/eventos-13.jpg" alt="Registro da Expert XP 2026" loading="lazy"></a>
+    </div>
   </div>
 </div>
 

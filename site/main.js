@@ -226,6 +226,34 @@
     if (e.key === 'Escape' && !legalOverlay.hidden) closeLegal();
   });
 
+  /* ---------- Modal de fotos de evento ---------- */
+  var eventOverlay = document.getElementById('event-overlay');
+  var eventPanel = document.getElementById('event-panel');
+  var eventClose = document.getElementById('event-close');
+  var eventOpenExpert = document.getElementById('event-open-expert');
+  var lastFocusedEvent = null;
+
+  function openEvent() {
+    eventOverlay.hidden = false;
+    lastFocusedEvent = document.activeElement;
+    eventClose.focus();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeEvent() {
+    eventOverlay.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocusedEvent && lastFocusedEvent.focus) lastFocusedEvent.focus();
+  }
+
+  if (eventOpenExpert) eventOpenExpert.addEventListener('click', openEvent);
+  eventOverlay.addEventListener('click', closeEvent);
+  eventPanel.addEventListener('click', function (e) { e.stopPropagation(); });
+  eventClose.addEventListener('click', closeEvent);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !eventOverlay.hidden) closeEvent();
+  });
+
   /* ---------- Quiz de qualificação (Contato) ---------- */
   if (SITE_CONFIG.contatoAtivo) {
     initQuiz();
