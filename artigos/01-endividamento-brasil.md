@@ -66,13 +66,13 @@ Só que aqui eu preciso separar duas coisas que costumam ser jogadas no mesmo ba
 
 ### Aposta esportiva
 
-Vou ser transparente com você: eu já apostei. E gosto.
+Vou deixar minha posição clara: eu não sou contra aposta esportiva.
 
-Gosto da adrenalina, gosto do que aquilo acrescenta a um jogo. Quem aposta sabe do que eu estou falando. Você senta pra assistir um time do outro lado do mundo, de um campeonato que você não acompanha, com jogadores cujos nomes você nunca ouviu, e vinte minutos depois está gritando no sofá como se fosse final de Libertadores. A aposta transforma noventa minutos de indiferença em noventa minutos de emoção.
+O apelo dela é fácil de entender. A pessoa senta pra assistir um time do outro lado do mundo, de um campeonato que não acompanha, com jogadores cujos nomes nunca ouviu, e vinte minutos depois está gritando no sofá como se fosse final de Libertadores. A aposta transforma noventa minutos de indiferença em noventa minutos de emoção.
 
 E eu não acho isso errado. Adrenalina e diversão não são luxo na vida de ninguém, são necessidade. A gente precisa de coisas que arranquem a gente da rotina, e a aposta esportiva, dentro de um limite, entrega um pedaço disso.
 
-O ponto é entender o que você está comprando. Quando você paga um ingresso de cinema, você não espera lucrar com aquilo. Você pagou por duas horas de experiência. Aposta esportiva, feita com consciência, é a mesma lógica: você está pagando por emoção, e o valor apostado é o preço do ingresso. Enquanto for isso, é entretenimento como qualquer outro.
+O ponto é entender o que se está comprando. Quando você paga um ingresso de cinema, você não espera lucrar com aquilo. Você pagou por duas horas de experiência. Aposta esportiva, feita com consciência, segue a mesma lógica: você está pagando por emoção, e o valor apostado é o preço do ingresso. Enquanto for isso, é entretenimento como qualquer outro.
 
 O problema começa quando aquilo deixa de ser escolha e vira necessidade. Quando você não está mais apostando pela emoção do jogo, e sim pra recuperar o que perdeu ontem. Quando o valor precisa subir porque o de antes já não dá o mesmo barato. Quando você mente sobre quanto apostou, ou aposta dinheiro que tinha destino certo. Aí não é mais diversão, é doença — e isso merece um artigo inteiro só pra ele, que eu pretendo escrever.
 
