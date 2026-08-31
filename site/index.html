@@ -226,13 +226,37 @@
     <p class="eyebrow" data-reveal>Criações próprias</p>
     <h2 class="section-title" data-reveal>Portfólio</h2>
     <div class="portfolio-grid">
-      <button type="button" class="portfolio-card" id="portfolio-open-selic" data-hoverable aria-haspopup="dialog" data-reveal style="transition-delay:0ms">
+      <button type="button" class="portfolio-card" data-portfolio="custo-oportunidade" data-hoverable aria-haspopup="dialog" data-reveal style="transition-delay:0ms">
+        <div class="portfolio-thumb">
+          <img src="img/portfolio/custo-oportunidade-01.png" alt="Capa do carrossel sobre custo de oportunidade" loading="lazy">
+          <span class="portfolio-count">8 slides</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Carrossel · Educação financeira</div>
+          <div class="portfolio-title">Custo de oportunidade: a conta que ninguém faz</div>
+          <div class="portfolio-date">Agosto de 2026</div>
+        </div>
+      </button>
+
+      <button type="button" class="portfolio-card" data-portfolio="aposta-futuro" data-hoverable aria-haspopup="dialog" data-reveal style="transition-delay:80ms">
+        <div class="portfolio-thumb">
+          <img src="img/portfolio/aposta-futuro-01.png" alt="Capa do carrossel sobre apostar em si mesmo" loading="lazy">
+          <span class="portfolio-count">8 slides</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Carrossel · Mentalidade</div>
+          <div class="portfolio-title">Você apostaria tudo em si mesmo?</div>
+          <div class="portfolio-date">Agosto de 2026</div>
+        </div>
+      </button>
+
+      <button type="button" class="portfolio-card" data-portfolio="selic" data-hoverable aria-haspopup="dialog" data-reveal style="transition-delay:160ms">
         <div class="portfolio-thumb">
           <img src="img/portfolio/selic-01.png" alt="Capa do carrossel sobre a Selic" loading="lazy">
           <span class="portfolio-count">7 slides</span>
         </div>
         <div class="portfolio-body">
-          <div class="portfolio-type">Carrossel · Educação financeira</div>
+          <div class="portfolio-type">Carrossel · Cenário de juros</div>
           <div class="portfolio-title">Se a Selic mudar 1 ponto, 3 coisas mudam no seu dinheiro</div>
           <div class="portfolio-date">Julho de 2026</div>
         </div>
@@ -478,25 +502,22 @@
   <div id="portfolio-panel" class="legal-panel portfolio-panel" role="dialog" aria-modal="true" aria-labelledby="portfolio-title">
     <div class="legal-head">
       <div>
-        <h3 id="portfolio-title" class="legal-title">Se a Selic mudar 1 ponto, 3 coisas mudam no seu dinheiro</h3>
-        <p class="portfolio-panel-meta">Carrossel · 7 slides · Publicado em julho de 2026</p>
+        <h3 id="portfolio-title" class="legal-title"></h3>
+        <p id="portfolio-meta" class="portfolio-panel-meta"></p>
       </div>
       <button type="button" id="portfolio-close" class="legal-close" data-hoverable aria-label="Fechar">✕</button>
     </div>
 
-    <p class="portfolio-panel-desc">Material educativo sobre o efeito prático de uma mudança na taxa Selic: o que acontece com o que você recebe na renda fixa, com o custo das suas dívidas e com o preço das coisas. Produzido para explicar, em linguagem simples, uma decisão que costuma parecer distante do dia a dia.</p>
+    <p id="portfolio-desc" class="portfolio-panel-desc"></p>
 
-    <div class="portfolio-slides">
-      <img src="img/portfolio/selic-01.png" alt="Slide 1 do carrossel sobre a Selic" loading="lazy">
-      <img src="img/portfolio/selic-02.png" alt="Slide 2 do carrossel sobre a Selic" loading="lazy">
-      <img src="img/portfolio/selic-03.png" alt="Slide 3 do carrossel sobre a Selic" loading="lazy">
-      <img src="img/portfolio/selic-04.png" alt="Slide 4 do carrossel sobre a Selic" loading="lazy">
-      <img src="img/portfolio/selic-05.png" alt="Slide 5 do carrossel sobre a Selic" loading="lazy">
-      <img src="img/portfolio/selic-06.png" alt="Slide 6 do carrossel sobre a Selic" loading="lazy">
-      <img src="img/portfolio/selic-07.png" alt="Slide 7 do carrossel sobre a Selic" loading="lazy">
+    <div id="portfolio-slides" class="portfolio-slides"></div>
+
+    <div class="portfolio-cta">
+      <p>Ficou com alguma dúvida sobre o tema, ou quer entender como isso se aplica ao seu caso?</p>
+      <button type="button" class="btn btn-primary" data-tab-link="contato" data-hoverable>Falar comigo</button>
     </div>
 
-    <p class="portfolio-panel-note">Conteúdo educativo publicado em julho de 2026. Os dados de mercado citados referem-se àquele período e não constituem análise vigente nem recomendação de investimento.</p>
+    <p id="portfolio-note" class="portfolio-panel-note"></p>
   </div>
 </div>
 

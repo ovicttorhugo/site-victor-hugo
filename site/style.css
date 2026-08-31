@@ -311,6 +311,12 @@ a:hover { opacity: .72; }
 .portfolio-panel-desc { font-size: 15px; line-height: 1.7; color: var(--muted); margin: 0 0 26px; }
 .portfolio-slides { display: flex; flex-direction: column; gap: 14px; }
 .portfolio-slides img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--line); }
+.portfolio-cta {
+  margin-top: 30px; padding: 24px 26px; text-align: center;
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); border-radius: 16px;
+}
+.portfolio-cta p { margin: 0 0 16px; font-size: 15px; line-height: 1.6; color: var(--ink); }
 .portfolio-panel-note {
   margin-top: 26px; font-size: 12px; line-height: 1.6; color: var(--muted);
   background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;

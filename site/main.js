@@ -255,13 +255,65 @@
   });
 
   /* ---------- Modal do portfólio ---------- */
+  var PORTFOLIO = {
+    'custo-oportunidade': {
+      title: 'Custo de oportunidade: a conta que ninguém faz',
+      meta: 'Carrossel · 8 slides · Publicado em agosto de 2026',
+      desc: 'Todo dinheiro parado tem um preço, mas ele não aparece em nenhuma fatura. Este material explica o conceito de custo de oportunidade em linguagem simples e mostra como estimar, na prática, quanto se deixa de ganhar deixando dinheiro parado na conta corrente.',
+      slides: 8,
+      prefix: 'custo-oportunidade',
+      alt: 'do carrossel sobre custo de oportunidade',
+      note: 'Conteúdo educativo publicado em agosto de 2026. Os valores e percentuais citados são ilustrativos, referem-se ao período de publicação e não constituem análise vigente nem recomendação de investimento.'
+    },
+    'aposta-futuro': {
+      title: 'Você apostaria tudo em si mesmo?',
+      meta: 'Carrossel · 8 slides · Publicado em agosto de 2026',
+      desc: 'Um material sobre constância e aporte: por que o hábito de investir todo mês pesa mais no resultado final do que a busca pela escolha perfeita, e como o tempo faz o trabalho que a sorte não faz.',
+      slides: 8,
+      prefix: 'aposta-futuro',
+      alt: 'do carrossel sobre apostar em si mesmo',
+      note: 'Conteúdo educativo publicado em agosto de 2026. As projeções citadas são ilustrativas, não representam promessa de rentabilidade e não constituem recomendação de investimento.'
+    },
+    'selic': {
+      title: 'Se a Selic mudar 1 ponto, 3 coisas mudam no seu dinheiro',
+      meta: 'Carrossel · 7 slides · Publicado em julho de 2026',
+      desc: 'Material educativo sobre o efeito prático de uma mudança na taxa Selic: o que acontece com o que você recebe na renda fixa, com o custo das suas dívidas e com o preço das coisas. Produzido para explicar, em linguagem simples, uma decisão que costuma parecer distante do dia a dia.',
+      slides: 7,
+      prefix: 'selic',
+      alt: 'do carrossel sobre a Selic',
+      note: 'Conteúdo educativo publicado em julho de 2026. Os dados de mercado citados referem-se àquele período e não constituem análise vigente nem recomendação de investimento.'
+    }
+  };
+
   var pfOverlay = document.getElementById('portfolio-overlay');
   var pfPanel = document.getElementById('portfolio-panel');
   var pfClose = document.getElementById('portfolio-close');
-  var pfOpenSelic = document.getElementById('portfolio-open-selic');
+  var pfTitle = document.getElementById('portfolio-title');
+  var pfMeta = document.getElementById('portfolio-meta');
+  var pfDesc = document.getElementById('portfolio-desc');
+  var pfSlides = document.getElementById('portfolio-slides');
+  var pfNote = document.getElementById('portfolio-note');
   var lastFocusedPf = null;
 
-  function openPortfolio() {
+  function openPortfolio(key) {
+    var item = PORTFOLIO[key];
+    if (!item) return;
+
+    pfTitle.textContent = item.title;
+    pfMeta.textContent = item.meta;
+    pfDesc.textContent = item.desc;
+    pfNote.textContent = item.note;
+
+    pfSlides.innerHTML = '';
+    for (var i = 1; i <= item.slides; i++) {
+      var n = (i < 10 ? '0' : '') + i;
+      var img = document.createElement('img');
+      img.src = 'img/portfolio/' + item.prefix + '-' + n + '.png';
+      img.alt = 'Slide ' + i + ' ' + item.alt;
+      img.loading = 'lazy';
+      pfSlides.appendChild(img);
+    }
+
     pfOverlay.hidden = false;
     lastFocusedPf = document.activeElement;
     pfPanel.scrollTop = 0;
@@ -275,13 +327,21 @@
     if (lastFocusedPf && lastFocusedPf.focus) lastFocusedPf.focus();
   }
 
-  if (pfOpenSelic) pfOpenSelic.addEventListener('click', openPortfolio);
+  document.querySelectorAll('[data-portfolio]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      openPortfolio(btn.getAttribute('data-portfolio'));
+    });
+  });
   pfOverlay.addEventListener('click', closePortfolio);
   pfPanel.addEventListener('click', function (e) { e.stopPropagation(); });
   pfClose.addEventListener('click', closePortfolio);
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !pfOverlay.hidden) closePortfolio();
   });
+
+  // o botão de contato dentro do modal também precisa fechá-lo
+  var pfCta = pfPanel.querySelector('[data-tab-link]');
+  if (pfCta) pfCta.addEventListener('click', closePortfolio);
 
   /* ---------- Quiz de qualificação (Contato) ---------- */
   if (SITE_CONFIG.contatoAtivo) {
