@@ -254,6 +254,35 @@
     if (e.key === 'Escape' && !eventOverlay.hidden) closeEvent();
   });
 
+  /* ---------- Modal do portfólio ---------- */
+  var pfOverlay = document.getElementById('portfolio-overlay');
+  var pfPanel = document.getElementById('portfolio-panel');
+  var pfClose = document.getElementById('portfolio-close');
+  var pfOpenSelic = document.getElementById('portfolio-open-selic');
+  var lastFocusedPf = null;
+
+  function openPortfolio() {
+    pfOverlay.hidden = false;
+    lastFocusedPf = document.activeElement;
+    pfPanel.scrollTop = 0;
+    pfClose.focus();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePortfolio() {
+    pfOverlay.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocusedPf && lastFocusedPf.focus) lastFocusedPf.focus();
+  }
+
+  if (pfOpenSelic) pfOpenSelic.addEventListener('click', openPortfolio);
+  pfOverlay.addEventListener('click', closePortfolio);
+  pfPanel.addEventListener('click', function (e) { e.stopPropagation(); });
+  pfClose.addEventListener('click', closePortfolio);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !pfOverlay.hidden) closePortfolio();
+  });
+
   /* ---------- Quiz de qualificação (Contato) ---------- */
   if (SITE_CONFIG.contatoAtivo) {
     initQuiz();
