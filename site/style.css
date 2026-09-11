@@ -282,6 +282,10 @@ a:hover { opacity: .72; }
 .event-text { font-size: 15px; line-height: 1.6; color: var(--muted); }
 
 /* Portfolio */
+.portfolio-empty {
+  border: 1px dashed var(--line); border-radius: 18px; padding: 60px 30px;
+  text-align: center; color: var(--muted); font-size: 15px;
+}
 .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 380px)); gap: 22px; }
 .portfolio-card {
   border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--surface);
