@@ -182,7 +182,10 @@ SETORES_BONUS = {
 # 4. CORTES - onde cada faixa comeca
 # ---------------------------------------------------------------------------
 CORTE_PRIORIDADE_A = 45   # falar essa semana
-CORTE_PRIORIDADE_B = 25   # falar neste mes
+CORTE_PRIORIDADE_B = 18   # falar neste mes
+# Corte B em 18 porque o Victor nao trabalha com aporte minimo: vale
+# abrir mais a faixa e ganhar no volume. Se um dia passar a ter minimo,
+# suba para 25 (minimo baixo) ou 35 (minimo alto).
 # abaixo disso: baixa prioridade (nutrir com conteudo, sem abordagem 1:1)
 
 # Quantas conexoes trabalhar por semana (o gerador de briefing respeita isso)

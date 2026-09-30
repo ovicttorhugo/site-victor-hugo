@@ -18,6 +18,9 @@ seu conteúdo. Ninguém é queimado.
    cargo ou da empresa. Nunca sai do nada.
 5. **Zero link, zero PDF, zero "15 minutinhos" na primeira.** Isso é o que o
    vendedor compulsivo faz, e a pessoa reconhece em 2 segundos.
+6. **Você atende remoto, então a âncora não é cidade — é setor.** Em vez de
+   "sou assessor aqui em X", use "atendo bastante gente do agro". Proximidade
+   de assunto vale mais que proximidade de mapa.
 
 ---
 
@@ -64,7 +67,7 @@ Os nomes abaixo são do arquivo de exemplo. Troque pelos reais.
 > puxando assunto. Vi o post da entrega do empreendimento na zona sul — 
 > parabéns, o acabamento ficou muito bom.
 >
-> Eu sou assessor de investimentos aqui em [cidade], trabalho com empresários.
+> Eu sou assessor de investimentos, trabalho bastante com quem toca obra.
 >
 > Fiquei curioso com uma coisa: num projeto desse tamanho, entre a venda na
 > planta e a entrega, o caixa fica parado muito tempo?
@@ -127,7 +130,7 @@ Perguntar isso mostra que você entende o negócio, não só o produto.
 > Patrícia, tudo bem? Conectamos aqui e nunca puxei assunto. Li seu texto sobre
 > a mudança na tributária — foi o resumo mais claro que eu vi sobre o assunto.
 >
-> Sou assessor de investimentos aqui em [cidade].
+> Sou assessor de investimentos e atendo vários sócios de escritório.
 >
 > Aproveitando que você entende do tema: na prática, os clientes já estão te
 > procurando pra reorganizar patrimônio por causa disso, ou ainda não caiu a ficha?
@@ -160,7 +163,7 @@ Aqui não tem post pra puxar. Use o cargo, a empresa ou o tempo de conexão.
 > resolvi corrigir isso.
 >
 > Sou assessor de investimentos e tenho conversado com bastante empresário da
-> indústria aqui da região.
+> indústria.
 >
 > Frigorífico é um setor que eu conheço pouco por dentro: o que mais aperta o
 > caixa de vocês hoje, o insumo ou o prazo do cliente?
@@ -215,6 +218,22 @@ estava esperando isso a conversa inteira.** Três formas que funcionam:
 
 > **Escolha a ponte 3 quando a pessoa for direta e seca.** Gente objetiva
 > respeita quem é objetivo e desconfia de quem enrola.
+
+---
+
+# Se ela perguntar "você fica onde?"
+
+Vai acontecer, e não é objeção — é curiosidade. Responda sem rodeio e siga:
+
+> "Atendo remoto, Brasil inteiro. Na prática a gente resolve tudo por chamada e
+> assinatura digital — tenho cliente que nunca me viu pessoalmente. Mas se você
+> for de [cidade dela], dou um jeito de tomar um café."
+
+**Por que funciona:** você não pede desculpa por ser remoto, trata como normal
+(porque é), e ainda deixa a porta do presencial aberta sem prometer nada.
+
+**O que não fazer:** não se antecipe explicando que é remoto antes de ela
+perguntar. Isso vira justificativa, e justificativa cria a dúvida que não existia.
 
 ---
 
