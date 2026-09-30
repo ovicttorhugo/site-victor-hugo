@@ -78,7 +78,12 @@ def normalizar(texto):
         return ""
     texto = unicodedata.normalize("NFKD", str(texto))
     texto = "".join(c for c in texto if not unicodedata.combining(c))
-    texto = texto.lower().replace("|", " ").replace("/", " ")
+    texto = texto.lower()
+    # separadores que o pessoal usa no titulo: "CEO @ Acme | Founder - Socio"
+    for sep in ("|", "/", "@", "•", "·", "—", "–", "»", ">", "+", "&"):
+        texto = texto.replace(sep, " ")
+    # emoji e simbolos soltos so atrapalham a comparacao
+    texto = "".join(c for c in texto if c.isalnum() or c in " .,-")
     texto = re.sub(r"\s+", " ", texto).strip()
     return texto
 
@@ -331,6 +336,21 @@ def escrever_resumo(baldes, total):
         linhas.append("Use isso pra decidir sobre o que voce posta.\n")
         for setor, qtd in setores.most_common(12):
             linhas.append(f"- **{setor}** - {qtd} conexoes")
+
+    sem_dados = [p for p in baldes["BAIXA"]
+                 if "sem cargo e sem empresa" in p["por_que"]]
+    if sem_dados:
+        linhas.append("\n## Perfis sem informacao no export\n")
+        linhas.append(
+            f"**{len(sem_dados)} conexoes** vieram sem cargo e sem empresa - o "
+            "LinkedIn nao exporta esses campos quando a pessoa restringe o perfil.\n"
+        )
+        linhas.append(
+            "Elas cairam em baixa prioridade por falta de dado, **nao porque nao "
+            "servem**. Pode ter empresario bom escondido ai. Vale bater o olho na "
+            "lista de vez em quando: estao em `3-baixa-prioridade.csv` com o "
+            "motivo \"sem cargo e sem empresa no export\".\n"
+        )
 
     motivos_fora = Counter()
     for p in baldes["EXCLUIDO"]:
