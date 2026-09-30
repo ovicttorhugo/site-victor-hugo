@@ -1,0 +1,14 @@
+# NAO versionar dados reais de conexoes.
+# Este repositorio e do site publico do Victor: nome, cargo e empresa das
+# suas conexoes nao podem ir pro GitHub (LGPD e bom senso).
+
+entrada/*
+!entrada/.gitkeep
+
+saida/*
+!saida/.gitkeep
+
+*.zip
+Connections.csv
+__pycache__/
+*.pyc
