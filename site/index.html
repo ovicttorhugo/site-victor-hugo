@@ -202,7 +202,16 @@
     </button>
 
     <div class="event-list">
-      <div class="event-card" data-reveal data-hoverable style="transition-delay:0ms">
+      <button type="button" class="event-card" id="event-open-fe26" data-reveal data-hoverable aria-haspopup="dialog" style="transition-delay:0ms">
+        <div class="event-date">19&ndash;22 OUT 2026</div>
+        <div>
+          <span class="tag">Evento</span>
+          <div class="event-title">Feira do Empreendedor 2026 &middot; Sebrae-SP</div>
+          <div class="event-text">Visita à feira do Sebrae-SP no São Paulo Expo, que reúne cerca de 900 expositores e mais de 20 arenas de conteúdo ao longo de quatro dias.</div>
+          <span class="event-card-cta">Ver fotos &rarr;</span>
+        </div>
+      </button>
+      <div class="event-card" data-reveal data-hoverable style="transition-delay:90ms">
         <div class="event-date">AGO 2026</div>
         <div>
           <span class="tag">Conquista</span>
@@ -210,7 +219,7 @@
           <div class="event-text">Certificação conquistada, habilitando a atuação como assessor de investimentos. Encerra o ciclo do grupo de formação e abre a próxima etapa da carreira.</div>
         </div>
       </div>
-      <div class="event-card" data-reveal data-hoverable style="transition-delay:90ms">
+      <div class="event-card" data-reveal data-hoverable style="transition-delay:180ms">
         <div class="event-date">JUL 2026</div>
         <div>
           <span class="tag">Evento</span>
@@ -218,7 +227,7 @@
           <div class="event-text">Participação em um dos maiores eventos de investimentos da América Latina, em São Paulo. Registros disponíveis no destaque acima.</div>
         </div>
       </div>
-      <div class="event-card" data-reveal data-hoverable style="transition-delay:180ms">
+      <div class="event-card" data-reveal data-hoverable style="transition-delay:270ms">
         <div class="event-date">JUN 2026</div>
         <div>
           <span class="tag">Carreira</span>
@@ -247,7 +256,18 @@
       <div>Textos e artigos escritos por <span class="ink strong">Victor Hugo</span>. Novas publicações são adicionadas com o tempo.</div>
     </div>
     <div class="articles-list">
-      <a href="artigos/inadimplencia-no-brasil.html" class="article-row" data-reveal data-hoverable style="transition-delay:0ms">
+      <a href="artigos/como-o-assessor-e-remunerado.html" class="article-row" data-reveal data-hoverable style="transition-delay:0ms">
+        <div>
+          <div class="article-meta">
+            <span class="tag-status published">Publicado</span>
+            <span class="article-date">20 OUT 2026</span>
+          </div>
+          <div class="article-title">Como seu assessor é remunerado, e por que isso deveria te importar</div>
+          <div class="article-excerpt">A própria CVM escreve, no termo que você assina, que os interesses do assessor podem entrar em conflito com os seus. Como ele é pago, onde está o conflito e o que você pode cobrar de qualquer profissional.</div>
+        </div>
+        <div class="article-cta hide-sm">Ler mais →</div>
+      </a>
+      <a href="artigos/inadimplencia-no-brasil.html" class="article-row" data-reveal data-hoverable style="transition-delay:90ms">
         <div>
           <div class="article-meta">
             <span class="tag-status published">Publicado</span>
@@ -469,6 +489,28 @@
       <a href="img/eventos-12.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/eventos-12.jpg" alt="Registro da Expert XP 2026" loading="lazy"></a>
       <a href="img/eventos-13.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/eventos-13.jpg" alt="Registro da Expert XP 2026" loading="lazy"></a>
     </div>
+  </div>
+</div>
+
+<div id="fe26-overlay" class="legal-overlay" hidden>
+  <div id="fe26-panel" class="legal-panel event-panel" role="dialog" aria-modal="true" aria-labelledby="fe26-title">
+    <div class="legal-head">
+      <div>
+        <h3 id="fe26-title" class="legal-title">Feira do Empreendedor 2026</h3>
+        <p class="portfolio-panel-meta">Sebrae-SP · São Paulo Expo · 19 a 22 de outubro de 2026</p>
+      </div>
+      <button type="button" id="fe26-close" class="legal-close" data-hoverable aria-label="Fechar">✕</button>
+    </div>
+    <p class="portfolio-panel-desc">Registros da visita à feira, que neste ano tem o tema "É Mais Negócio". Toque em uma foto para ampliar.</p>
+    <div class="event-gallery solo">
+      <a href="img/fe26/fe26-01.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/fe26/fe26-01.jpg" alt="Portal de entrada da Feira do Empreendedor 2026, do Sebrae, com visitantes circulando" loading="lazy"></a>
+      <a href="img/fe26/fe26-02.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/fe26/fe26-02.jpg" alt="Letreiro FE26 no salão principal da feira" loading="lazy"></a>
+      <a href="img/fe26/fe26-03.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/fe26/fe26-03.jpg" alt="Palestra em uma das arenas de conteúdo da feira" loading="lazy"></a>
+      <a href="img/fe26/fe26-04.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/fe26/fe26-04.jpg" alt="Estande da Cidade Empreendedora com decoração iluminada" loading="lazy"></a>
+      <a href="img/fe26/fe26-05.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/fe26/fe26-05.jpg" alt="Estande lotado na rua 7 da feira" loading="lazy"></a>
+      <a href="img/fe26/fe26-06.jpg" target="_blank" rel="noopener" class="event-gallery-item" data-hoverable><img src="img/fe26/fe26-06.jpg" alt="Astronauta caracterizado circulando por um estande de tecnologia" loading="lazy"></a>
+    </div>
+    <p class="event-source">Dados do evento: <a href="https://www.em.com.br/mundo-corporativo/2026/10/7524330-feira-do-sebrae-reune-900-expositores-em-sao-paulo.html" target="_blank" rel="noopener">Estado de Minas</a>, com informações do Sebrae-SP.</p>
   </div>
 </div>
 

@@ -5,7 +5,7 @@
   var SITE_CONFIG = {
     // Troque para true quando tiver o credenciamento de assessor para exibir a aba "Contato".
     contatoAtivo: true,
-    // Seu WhatsApp com código do país e DDD, somente dígitos (ex: 5511999999999).
+    // Seu WhatsApp com código do país e DDD, somente dígitos (55 + DDD + número, sem espaços).
     whatsappNumero: '5511955951814'
   };
 
@@ -252,6 +252,35 @@
   eventClose.addEventListener('click', closeEvent);
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !eventOverlay.hidden) closeEvent();
+  });
+
+  /* ---------- Modal de fotos da Feira do Empreendedor ---------- */
+  var fe26Overlay = document.getElementById('fe26-overlay');
+  var fe26Panel = document.getElementById('fe26-panel');
+  var fe26Close = document.getElementById('fe26-close');
+  var fe26Open = document.getElementById('event-open-fe26');
+  var lastFocusedFe26 = null;
+
+  function openFe26() {
+    fe26Overlay.hidden = false;
+    lastFocusedFe26 = document.activeElement;
+    fe26Panel.scrollTop = 0;
+    fe26Close.focus();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeFe26() {
+    fe26Overlay.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocusedFe26 && lastFocusedFe26.focus) lastFocusedFe26.focus();
+  }
+
+  if (fe26Open) fe26Open.addEventListener('click', openFe26);
+  fe26Overlay.addEventListener('click', closeFe26);
+  fe26Panel.addEventListener('click', function (e) { e.stopPropagation(); });
+  fe26Close.addEventListener('click', closeFe26);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !fe26Overlay.hidden) closeFe26();
   });
 
   /* ---------- Modal do portfólio ---------- */
